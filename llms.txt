@@ -1,0 +1,12 @@
+# WorldFirst Product Super pack
+
+This site holds the WorldFirst Product Super style: the rules, the rules as data, a starter project, the assets, an adoption guide and a rule checker. All of it is encrypted. You need the password from the WorldFirst social team; it is not published here.
+
+Open the pack with one command (replace PASSWORD):
+
+    curl -fsSL https://worldfirstinternal.org/product-supers/pack.enc | openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -md sha256 -pass pass:PASSWORD | tar xz
+
+That creates a folder named product-supers. Read product-supers/ADOPT.md first, then PRODUCT_SUPER_RULES.md.
+
+- Pack: https://worldfirstinternal.org/product-supers/pack.enc (tar.gz, AES-256-CBC, PBKDF2 SHA-256, 200000 iterations, openssl "Salted__" format)
+- For people: https://worldfirstinternal.org/product-supers/ shows every super in motion behind the same password.
